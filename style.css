@@ -1,0 +1,25 @@
+body{
+    background-image: url(http://www.fondsecran.eu/pictures/2014/0827/1/tomato-pizza-olives-onion-olive-oil-bell-pepper-italian-cuisine-pics-152834.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+}
+#Info-Perso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+.info{
+    height: 30px;
+    width: 30vw;
+    margin: 10px;
+    border: solid green;
+    border-radius: 10px;
+}
