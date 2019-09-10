@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: green;
+}
+
+h2{
+    color: green;
+    text-decoration: underline;
+}
+
+#daddyv{
+    display: flex;
+    border: solid white;
+    background-color: white;
+    height: 90vh;
+    width: 80vw;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contain{
+    border: solid red;
+    background-color: red;
+    height: 70vh;
+    width: 70vw;
+}
+
+#tab{
+    border: solid black;
+    height: 63vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#bord{
+    border: solid black;
+    border-top: none;
+    height: 63vh;
+    margin-right: 200px;
+}
