@@ -1,0 +1,59 @@
+#contenu{
+    display: flex;
+    flex-direction: column;
+    height: 90vw;
+    width: 93vw;
+    margin-left: 3vw;
+}
+
+h1{
+    -webkit-text-fill-color: green;
+    margin-left: 5px;
+    text-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.534); 
+}
+
+.marque{
+    display: flex;
+    flex-direction: row;
+    height: 20vw;
+    width: 80vW;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-left: 7%;
+}
+
+.subs{
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 15vw;
+    width: 70vw;
+}
+
+img{
+    height: 50%;
+}
+
+#menu{
+    display: flex;
+    height: 3vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 0.5vw;
+    background-color: red;
+    color: white;
+    font-style: italic;
+}
+
+.carousel-item{
+    margin-left: 20vw;
+}
+
+.caro{
+    margin-top: 100px;
+}
