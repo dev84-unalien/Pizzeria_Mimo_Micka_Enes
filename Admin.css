@@ -28,7 +28,7 @@ h2{
 
 #tab{
     border: solid black;
-    height: 69vh;
+    height: 63vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,6 +38,6 @@ h2{
 #bord{
     border: solid black;
     border-top: none;
-    height: 69vh;
+    height: 63vh;
     margin-right: 200px;
 }
