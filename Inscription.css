@@ -64,3 +64,8 @@ h1{
     background-color: #009246 ;
     color: azure;
 }
+#Accueil{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
