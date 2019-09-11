@@ -8,7 +8,6 @@
     <title>Inscription</title>
 </head>
 <body>
-    <script src="Commande.js"></script>
     <a href="./Accueil.html" style="text-decoration: none;"><div class="marque">
             <div class="subs">
                 <img src="img/speedy.png">
@@ -17,6 +16,7 @@
             </div></a>
         </div>
     <div id="Info-Perso">
+<<<<<<< HEAD
         <input type="text" class="info" name="Nom" placeholder="Nom" required>
         <input type="text" class="info" name="Prénom" placeholder="Prénom" required>
         <input type="text" class="info" name="adr_vil" placeholder="Adresse/Ville" required>
@@ -24,6 +24,18 @@
         <input type="tel" class="info" name="phone" placeholder="Téléphone" required>
         <input type="password" class="info" name="MDP" placeholder="Mot de passe" required>
         <input type="password" class="info" name="confMDP" placeholder="Confirmez mot de passe" required>
+=======
+        <form method="POST" action="inscription.php">
+            <input type="text" class="info" id="nom" name="nom" placeholder="Nom" required>
+            <input type="text" class="info" id="prenom" name="prenom" placeholder="Prénom" required>
+            <input type="text" class="info" id="adresse" name="adresse" placeholder="Adresse/Ville" required>
+            <input type="text" class="info" id="postal" name="postal" placeholder="Code postal" required>
+            <input type="tel" class="info" id="tel" name="tel" placeholder="Téléphone" required>
+            <input type="password" class="info" id="mdp" name="mdp" placeholder="Mot de passe" required>
+            <input type="password" class="info" id="confMdp" name="confMdp" placeholder="Confirmez mot de passe" required>
+            <input type="submit" name="submit" placeholder="Valider">
+        </form>
+>>>>>>> 0ffdffba3ace17066c6a7c29f13a3099c0e674aa
     </div>
     
     <a href="./Accueil.html"><button id="valider">Valider</button></a>

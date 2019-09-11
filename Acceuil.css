@@ -7,7 +7,7 @@
 }
 
 h1{
-    -webkit-text-fill-color: green;
+    -webkit-text-fill-color: #009246;
     margin-left: 5px;
     text-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.534); 
 }
@@ -21,16 +21,18 @@ h1{
     justify-content: center;
     background-color: white;
     margin-left: 7%;
+    border-radius: 0px 30px 0px 30px;
 }
 
 .subs{
     display: flex;
     flex-direction: row;
-    background-color: red;
+    background-color: #c21b1a;
     align-items: center;
     justify-content: space-evenly;
     height: 15vw;
     width: 70vw;
+    border-radius: 0px 15px 0px 15px;
 }
 
 img{
@@ -45,10 +47,79 @@ img{
     align-items: center;
     font-size: 30px;
     margin-top: 0.5vw;
-    background-color: red;
+    background-color: #c21b1a;
     color: white;
     font-style: italic;
+    text-decoration: none;
 }
+
+.pizza{
+    width: 90vw;
+    height: 10vw;
+}
+
+.tomato{
+    width: 60vw;
+    height: 10vw;
+    border-radius: 5%;
+}
+
+.fc{
+    width: 25vw;
+    height: 10vw;
+    border-radius: 5%;
+}
+
+.bouton{
+    display: flex;
+    width: 90vw;
+    height: 5vw;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin: 5% 0% 0% 35%;
+    height: 5vw;
+    width: 5vw;
+}
+
+.bouton > .tomato{
+    animation: Animation 2s infinite linear;
+    margin-left: -25%;
+}
+
+@keyframes Animation{
+	0%{
+		background-color: green;
+	}
+	50%{
+		background-color: white;
+	}
+
+	100%{
+		background-color: red;
+    }
+}
+
+.bouton > .fc{
+    animation: Anima 2s infinite linear;
+    position: absolute;
+    margin-left: 25%;
+}
+
+@keyframes Anima{
+	0%{
+		background-color: red;
+	}
+	50%{
+		background-color: white;
+	}
+
+	100%{
+		background-color: green
+    }
+}
+
+
 
 .carousel-item{
     margin-left: 20vw;
