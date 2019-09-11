@@ -1,11 +1,11 @@
 body{
     display: flex;
     justify-content: center;
-    background-color: #009246;
+    background-color: green;
 }
 
 h2{
-    color: #009246;
+    color: green;
     text-decoration: underline;
 }
 
@@ -17,20 +17,18 @@ h2{
     width: 80vw;
     align-items: center;
     flex-direction: column;
-    font-size: 20px;
 }
 
 #contain{
-    border: solid #c21b1a;
-    background-color: #c21b1a;
+    border: solid red;
+    background-color: red;
     height: 70vh;
     width: 70vw;
 }
 
 #tab{
-    position: relative;
     border: solid black;
-    height: 69vh;
+    height: 63vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,20 +38,6 @@ h2{
 #bord{
     border: solid black;
     border-top: none;
-    height: 69vh;
-}
-#imgPizza{
-    position: absolute;
-    left: 0px;
-    height: 50%;
-}
-#description{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    color: white;
-    right: 0px;
-    height: 69vh;
-    width: 34vw;
+    height: 63vh;
+    margin-right: 200px;
 }
