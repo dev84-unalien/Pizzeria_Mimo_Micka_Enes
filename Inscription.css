@@ -1,0 +1,66 @@
+body{
+    background-image: url(http://www.fondsecran.eu/pictures/2014/0827/1/tomato-pizza-olives-onion-olive-oil-bell-pepper-italian-cuisine-pics-152834.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-decoration: none;
+}
+img{
+    height: 50%;
+}
+h1{
+    -webkit-text-fill-color: #009246;
+    margin-left: 5px;
+    text-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.534); 
+}
+.marque{
+    display: flex;
+    flex-direction: row;
+    height: 20vw;
+    width: 80vW;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-left: 7%;
+    border-radius: 0px 30px 0px 30px;
+}
+.subs{
+    display: flex;
+    flex-direction: row;
+    background-color: #c21b1a;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 15vw;
+    width: 70vw;
+    border-radius: 0px 15px 0px 15px;
+}
+#Info-Perso{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+.info{
+    height: 30px;
+    width: 30vw;
+    margin: 10px;
+    border: solid #009246;
+    border-radius: 10px;
+}
+#valider{
+    height: 50px;
+    width: 150px;
+    margin: 20px;
+    border: solid forestgreen 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #009246 ;
+    color: azure;
+}
