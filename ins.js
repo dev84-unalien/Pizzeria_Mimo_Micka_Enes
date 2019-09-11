@@ -1,9 +1,14 @@
-$.ajax({
-    url: "/api/getWeather",
+function inscription() {
+  $.ajax({
+    url: "http://localhost/Pizzeria_Mimo_Micka_Enes/inscription.php",
     data: {
-      zipcode: 97201
+      nom: $("#nom").val(),
+      adresse: $("#adresse").val(),
+      postal: $("#postal").val()
     },
-    success: function( result ) {
-      $( "#weather-temp" ).html( "<strong>" + result + "</strong> degrees" );
+    success: function(result) {
+      document.location.href =
+        "http://localhost/Pizzeria_Mimo_Micka_Enes/accueil.html";
     }
   });
+}
