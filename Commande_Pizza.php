@@ -1,14 +1,20 @@
 <?php
-$id = $_POST['id'];
-$nom = $_POST['nom'];
-$prenom = $_POST['prenom'];
-$adresse = $_POST['adresse'];
-$postal = $_POST['postal'];
-$tel = $_POST['tel'];
 
-if (! $id || $nom || $prenom  || $adresse || $postal || $tel) {
+$name = $_POST['name'];
+$prenom = $_POST['prenom'];
+$adress = $_POST['adresse'];
+$postal = $_POST['postale'];
+$number = $_POST['numero'];
+
+if (!$name || $prenom  || $adress || $postal || $number) {
     echo "Le formulaire est incomplet";
     exit(); 
+}
+
+
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    echo "Votre email est incorrect !";
+    exit(); // On termine le programme
 }
 
 // Il faut établir une connexion avec la base de donnée
@@ -16,15 +22,15 @@ $reservation = new mysqli("localhost", "root", "", "mabdd");
 // Il faut préparer la requete SQL
 $request = $reservation->prepare("SELECT *,  FROM réservation");
 // On renseigne les valeurs dynamiques de la requete
-$request->bind_param("ssssss", $id,$nom,$prenom,$adresse,$postal,$tel);
+$request->bind_param("ssss", $email,$name,$prenom,$number);
 // On execute la requete
 $request->execute();
 // On récupere l'email et mot de passe retourné par la base de donnée
-$id = null; // Initialisé car plus pratique pour faire des if aprés
-$nom = null
-$prenom = null
-$tel = null
-$request->bind_result($client_id, $client_nom, $client_prenom, $client_adresse, $client_code_postal,$tel);
+$bdd_email = null; // Initialisé car plus pratique pour faire des if aprés
+$bdd_name = null
+$bdd_prenom = null
+$bdd_$number = null
+$request->bind_result($bdd_email, $bdd_name, $bdd_prenom, $bdd_$number);
 // On execute la récup des valeurs
 $request->fetch();
 // On ferme la connexion avec la base de donnée et la requette
